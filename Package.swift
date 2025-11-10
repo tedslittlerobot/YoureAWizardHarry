@@ -14,10 +14,10 @@ let package = Package(
         .library(
             name: "YoureAWizardHarry",
             targets: ["YoureAWizardHarry"],
-        ),
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/simibac/ConfettiSwiftUI.git", from: "2.0.3"),
+        .package(url: "https://github.com/simibac/ConfettiSwiftUI.git", from: "2.0.3")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
