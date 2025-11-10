@@ -1,9 +1,11 @@
 import SwiftUI
 
-struct DebugWizardStepView: View {
+public struct DebugWizardStepView: View {
     @Environment(WizardState.self) var wizard
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         VStack {
             Text("This is a wizard step")
 

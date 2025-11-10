@@ -1,11 +1,9 @@
 import Foundation
 
 extension WizardState {
-    public struct Location: Equatable, Identifiable {
+    public struct Location {
         public let node: Int
         public let step: Int
-
-        public var id: String { "\(node)-\(step)" }
 
         public static func initial() -> Location { Location(node: 0, step: 0) }
 
@@ -18,3 +16,9 @@ extension WizardState {
         }
     }
 }
+
+extension WizardState.Location: Identifiable {
+    public var id: String { "\(node)-\(step)" }
+}
+
+extension WizardState.Location: Equatable {}

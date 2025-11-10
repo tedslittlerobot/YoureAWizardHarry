@@ -26,7 +26,7 @@ import SwiftUI
 
     public var isOnLastStep: Bool {
         return location.node == nodes.count - 1
-        && location.step == (nodes.last?.steps.count ?? 0) - 1
+            && location.step == (nodes.last?.steps.count ?? 0) - 1
     }
 
     @discardableResult
@@ -77,7 +77,6 @@ import SwiftUI
     }
 }
 
-
 extension WizardState {
     public var current: (Node, Step, Location)? {
         guard let (node, step) = nodes.maybeGet(location: location) else { return nil }
@@ -118,8 +117,7 @@ extension WizardState {
         .init(nodes: .forPreview, location: .init(node: 1, step: 1))
     }
 
-    public static var forPreviewComplete: WizardState
-    {
+    public static var forPreviewComplete: WizardState {
         .init(nodes: .forPreview, location: [Node].forPreview.lastLocation)
     }
 }

@@ -2,19 +2,27 @@ import Foundation
 import SwiftUI
 
 extension WizardState {
-    public struct Step: Equatable {
-        public static func == (lhs: Step, rhs: Step) -> Bool { lhs.title == rhs.title }
+    public struct Step {
         public let title: String
         let showNavigation: Bool
         let withValidation: Bool
         @ViewBuilder let content: () -> any View
 
-        public init(title: String, showNavigation: Bool = true, withValidation: Bool = false, content: @escaping () -> any View) {
+        public init(
+            title: String, showNavigation: Bool = true, withValidation: Bool = false,
+            content: @escaping () -> any View
+        ) {
             self.title = title
             self.showNavigation = showNavigation
             self.withValidation = withValidation
             self.content = content
         }
+    }
+}
+
+extension WizardState.Step: Equatable {
+    public static func == (lhs: WizardState.Step, rhs: WizardState.Step) -> Bool {
+        lhs.title == rhs.title
     }
 }
 
