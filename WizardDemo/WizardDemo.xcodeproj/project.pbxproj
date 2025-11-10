@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6198BE142EC1F05F006A6A4E /* YoureAWizardHarry in Frameworks */ = {isa = PBXBuildFile; productRef = 6198BE132EC1F05F006A6A4E /* YoureAWizardHarry */; };
+		6198BE242EC1F1E2006A6A4E /* YoureAWizardHarry in Frameworks */ = {isa = PBXBuildFile; productRef = 6198BE232EC1F1E2006A6A4E /* YoureAWizardHarry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6198BE142EC1F05F006A6A4E /* YoureAWizardHarry in Frameworks */,
+				6198BE242EC1F1E2006A6A4E /* YoureAWizardHarry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = WizardDemo;
 			packageProductDependencies = (
 				6198BE132EC1F05F006A6A4E /* YoureAWizardHarry */,
+				6198BE232EC1F1E2006A6A4E /* YoureAWizardHarry */,
 			);
 			productName = WizardDemo;
 			productReference = 6198BE042EC1F01F006A6A4E /* WizardDemo.app */;
@@ -101,6 +104,7 @@
 			mainGroup = 6198BDFB2EC1F01F006A6A4E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				6198BE222EC1F1E2006A6A4E /* XCLocalSwiftPackageReference "../../YoureAWizardHarry" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6198BE052EC1F01F006A6A4E /* Products */;
@@ -340,8 +344,19 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		6198BE222EC1F1E2006A6A4E /* XCLocalSwiftPackageReference "../../YoureAWizardHarry" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../YoureAWizardHarry;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		6198BE132EC1F05F006A6A4E /* YoureAWizardHarry */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YoureAWizardHarry;
+		};
+		6198BE232EC1F1E2006A6A4E /* YoureAWizardHarry */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = YoureAWizardHarry;
 		};

@@ -10,7 +10,7 @@ extension WizardState {
 
         public init(
             title: String, showNavigation: Bool = true, withValidation: Bool = false,
-            content: @escaping () -> any View
+            @ViewBuilder content: @escaping () -> any View
         ) {
             self.title = title
             self.showNavigation = showNavigation

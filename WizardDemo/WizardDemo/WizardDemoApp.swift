@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct WizardDemoApp: App {
     var body: some Scene {
-        WindowGroup {
+        Window("Wizard Window", id: "main") {
             ContentView()
         }
     }
