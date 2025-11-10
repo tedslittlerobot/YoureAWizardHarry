@@ -27,7 +27,7 @@ let package = Package(
             dependencies: [.Confetti],
         ),
         .testTarget(
-            name: "YoureAWizardHarryTests",
+            name: "NavigationTests",
             dependencies: ["YoureAWizardHarry"],
         ),
     ]

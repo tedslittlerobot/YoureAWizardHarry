@@ -14,6 +14,10 @@ extension WizardState {
         public func advancing(steps: Int) -> Location {
             .init(node: node, step: step + 1)
         }
+
+        public var asString: String {
+            "\(node):\(step)"
+        }
     }
 }
 
